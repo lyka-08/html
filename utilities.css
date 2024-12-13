@@ -1,0 +1,24 @@
+:root {
+    --lightred: #F0BBBB;
+    --Semiblack: #2a0e0d;
+    --Maroon: #4a1110;
+    --Black: #000000;
+    --Creamywhite: #fff3e3;
+}
+
+.flex{
+    display:flex;
+}
+.items-center{
+    align-items:center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.flex-1{
+    flex:1;
+}
+.justify-center{
+    justify-content: center;
+}

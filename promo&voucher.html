@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Promo & Voucher </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/Icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style.css">
+</head> 
+    
+<header>
+    <header class="container-header">
+        <nav id="main-nav" class="flex items-center justify-between">
+            <div class="branding">
+                <a href="homepage.html">
+                    <img class="img img-responsive" style="max-width:25px;" src="images/Logo.png">
+                </a>
+            </div>
+            
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="left flex items-center">
+                <div><b>          
+                    <a href="homepage.html">Home</a>
+                    <a href="promo&voucher.html">Promo & Vouchers</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="ourstory.html">Our Story</a>
+                    <a href="aboutus.html">About Us</a>
+                </b>   
+                </div>
+            </div>
+        </nav>
+    </header>
+</header>
+  
+    <section id="services" class="services">
+      <div class="container-promo">
+        <div class="card-wrapper">
+          <div class="box">
+            <div class="overlay">
+              <a href="#vouchers">
+                <img src="images/PROMO_1.png" style= "width:100%; height:100%; border-radius:20px; object-fit:cover;"  alt="">
+              </a>
+            </div> 
+          </div>
+          <div class="box">
+            <div class="overlay">
+              <a href="#vouchers">
+                <img src="images/PROMO_2.png" style= "width:100%; height:100%; border-radius:20px; object-fit:cover;" alt="">
+              </a>
+            </div> 
+          </div>
+          <div class="box">
+            <div class="overlay">
+              <a href="#vouchers">
+                <img src="images/PROMO_3.png" style= "width:100%; height:100%; border-radius:20px; object-fit: cover;" alt="">
+              </a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="vouchers" class="vouchers">
+        <div class="container">
+            <h1 class="section-heading" style="font-family: cursive; font-size: 50px;"><span id="h1-voucher">VOUCHERS</span></h1>
+            <div class="voucher-wrapper">
+                <!-- Voucher 1 -->
+                <div class="card">
+                    <a title="Claim">
+                        <div class="voucher-card">
+                            <img src="images/Voucher_1.png" alt="Voucher 1 Image">
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Voucher 2 -->
+                <div class="card">
+                    <a title="Claim">
+                        <div class="voucher-card">
+                            <img src="images/Voucher_2.png" alt="Voucher 2 Image">
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Voucher 3 -->
+                <div class="card">
+                    <a title="Claim">
+                        <div class="voucher-card">
+                            <img src="images/Voucher_3.png" alt="Voucher 3 Image">
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Voucher 4 -->
+                <div class="card">
+                    <a title="Claim">
+                        <div class="voucher-card">
+                            <img src="images/Voucher_4.png" alt="Voucher 4 Image">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal">
+        <h2>Voucher 1</h2>
+        <img src="images/Voucher_1.png" alt="Voucher 1" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="modal">
+        <h2>Voucher 2</h2>
+        <img src="images/Voucher_2.png" alt="Voucher 2" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="modal">
+        <h2>Voucher 3</h2>
+        <img src="images/Voucher_3.png" alt="Voucher 3" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="modal">
+        <h2>Voucher 4</h2>
+        <img src="images/Voucher_4.png" alt="Voucher 4" style="width: 100%; height: auto;">
+    </div>
+ 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('header nav .left');
+
+            hamburgerMenu.addEventListener('click', () => {
+                hamburgerMenu.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu when a nav link is clicked
+            const navLinks = document.querySelectorAll('header nav .left a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburgerMenu.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+</script>    
+
+<footer>
+  <div class="container-footer">
+      <div class="footer-content">
+
+          <div class="footer-left">
+              <h1 class="section-heading"><span id="h1-contact">CONTACT INFORMATION</span></h1>
+
+              <div class="footer-socials">
+                  <a href="https://web.facebook.com/layk.08/">
+                      <img src="images/Contact_FB.png" alt="Facebook">
+                      <span>Ocakes Bakeshop</span>
+                  </a>
+                  <a href="https://mail.google.com/mail">
+                      <img src="images/Contact_Email.png" alt="Email">
+                      <span>Ocakes.bakeshop@gmail.com</span>
+                  </a>
+                  <a href="https://mail.google.com/mail">
+                      <img src="images/Contact.png" alt="Contact">
+                      <span>+63-953-970-9489</span>
+                  </a>
+              </div>
+          </div>
+
+          <div class="footer-right">
+              <h1 class="section-heading"><span id="h1-branches">BRANCHES</span></h1>
+              <div class="footer-branches">
+                  <div class="branch-group">
+                      <p>Branch 1: SM City Dasmariñas,Cavite</p>
+                      <p>Branch 2: SM City Molino,Cavite</p>
+                  </div>
+                  <div class="branch-group">
+                      <p>Branch 3: SM City Bacoor,Cavite</p>
+                      <p>Branch 4: SM City Tanza,Cavite</p>  
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+          <div class="copyright">©2024 OCAKES BAKESHOP. All rights reserved</div>
+          <a  href="reference.html">
+            <div class="disclaimer" src="reference.html" alt="disclaimer">DISCLAIMER</div>
+        </a>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
+  
